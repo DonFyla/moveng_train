@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <title>Document</title>
+  {% load static %}
+  <!-- <style>
+    .backgroundd {
+      background-image: url("{% static 'moving_train_background1.jpg' %}");
+      background-size: cover;
+      background-position: center;
+      height: 20vh;
+      width: 100vw;
+
+
+    }
+
+    .container-fluid {
+      display: flex;
+      margin-right: 15px;
+    }
+
+    .headingg {
+      text-align: center;
+      margin-top: -15px;
+
+      margin-right: 00px;
+      align-items: center;
+      color: brown;
+    }
+
+    span {
+      font-family: cursive;
+      color: rgb(153, 153, 64);
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      
+
+    }
+
+    .nav-item {
+      margin-right: 100px;
+
+    }
+    .preamble{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      color: brown;
+      background-color: darkgray;
+    }
+    .aboutus{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .Tutors{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .becomestudent{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .reviews{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbar-brand mb-0 h1{
+      color: brown;
+    }
+  </style> -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #f5f5f5, #e0d4ba);
+    }
+
+    .backgroundd {
+      background-image: url("{% static 'download3.jpg' %}");
+      background-size: cover;
+      background-position: center 60%;
+      height: 20vh;
+      width: 100vw;
+      color: whitesmoke;
+    }
+
+    .backgroundd h1,
+    .backgroundd a {
+      color: whitesmoke;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #f5f5f5, #e0d4ba);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin-right: 20px;
+    }
+
+    .navbar-brand mb-0 h1 {
+      color: #543b0e;
+    }
+
+    .headingg {
+      text-align: center;
+      margin-top: -15px;
+      color: white;
+      font-style: italic;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .preamble {
+      display: grid;
+      justify-content: center;
+      height: 80vh;
+      color: blue;
+      align-items: center;
+      color: #543b0e;
+      padding: 50px;
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-image: url("{% static 'download3.jpg' %}");
+      background-position: center 100%;
+    }
+
+    pre h4,
+    pre h3 {
+      color: black;
+    }
+
+    .aboutus {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(155, 136, 117);
+    }
+
+    hr {
+      margin-top: -35px;
+    }
+
+    .Tutors {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+
+
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /*background-color: rgb(133, 95, 55);*/
+      background-color: rgb(155, 136, 117);
+    }
+
+
+    .becomestudent {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(155, 136, 117);
+    }
+
+    .reviews {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin-top: 20px;
+      background-image: url("{% static 'download2.jpg' %}");
+      background-size: cover;
+      background-position: center 60%;
+      /*background: linear-gradient(to right, #f5f5f5, #e0d4ba);*/
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2,
+    h3,
+    h4 {
+      color:
+        /* #543b0e;*/
+        black
+    }
+
+    b {
+      color: white;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    a {
+      color: #543b0e;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-left: 20px;
+      margin-top: -40px;
+      border-radius: 10px;
+    }
+
+    .vertical-line {
+      height: 100px;
+      /* Set the height of the vertical line */
+      border-left: 2px solid black;
+      /* Adjust color and thickness as needed */
+      margin-left: 0px;
+      /* Remove default margin */
+      padding: 0;
+      /* Remove default padding */
+    }
+
+    .div1 h5 {
+      margin-left: -40px;
+      margin-top: -50px;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="backgroundd">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img  src="{% static 'moving_train_img.jpg' %}" alt="Bootstrapp" width="150" height="100">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our-tutors">Our Tutors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#becomestudent">Become a student</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" style="color: black;" href="https://api.whatsapp.com/send?phone=08175854017&text=hello,i would like to inquire about the moving train
+                  ">whatsapp</a></li>
+                <li><a class="dropdown-item" style="color: black;" href="https://twitter.com/IlDonFyla">Twitter</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" style="color: black;"
+                    href="https://www.instagram.com/movingtrainchess/?hl=en">Instagram</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+
+
+
+        </div>
+
+      </div>
+      <div class="headingg" id="home">
+        <span class="navbar-brand mb-0 h1">
+          <h3><B>THE MOVING TRAIN CHESS ACADEMY</B></h3>
+        </span>
+      </div>
+    </div>
+
+  </nav>
+  <!-- end of navbar-->
+  <!-- start of detail section-->
+  <div class="preamble">
+    <p>
+    <pre>
+            <h3>      Hop On The Train Ride That Makes Your Journey To Chess
+                          Mastery Easy!</h3>
+            <h4> We have an expert-vetted curriculum that propels chess growth across all levels.</h4>
+      </pre>
+    </p>
+    <img src="{% static 'people_in_train.jpg' %}" alt="preamble"
+      style="width:400px; height:auto; margin-left: 350px; margin-top: -40px;">
+
+  </div>
+
+  <div class="aboutus" id="about">
+    <pre>
+      <H2 style = "color: brown;">About <span style="color: white;">Us:</span></H2>
+
+      <h4 style="margin-top: -40px; font-style: italic; ">The <span style="color: white;">BEST</span> Online Chess Academy to <span style="color: brown;">improve your gameplay!</span></h4>
+      <hr>
+ 
+      <div class="div1" style="display: flex;">
+        <hr class="vertical-line"><h5>
+      We are your most convenient and<span style="color:white;"> most efficient</span> chess training option. Our aim is to
+      neutralize the complexity of chess to give you seamless and interactive lessons that trigger<span style="color: yellow;">
+      rapid improvement in your gameplay</span></h5>
+      </div>
+    </pre>
+    <img   class="animate__animated animate__bounce"  src="{% static 'moving_train_aboutus.png' %}" alt="preamble"
+      style="width:300px; height:auto; margin-left: 300px; margin-top: -40px;">
+  </div>
+  <!--end of about us div-->
+  <div class="Tutors" id="our-tutors">
+    <pre style="margin-left: -220px;">
+      <h2 style="color: brown;">Our <span style="color: white;">Top Tutors</span></h2>
+      <hr>
+
+      <h4 style="color: brown; font-style:italic; margin-top:-50px;">FIDE Master<span style="color: white;"> Akintoye Abdulraheem</span></h4>
+    </pre>
+    <img src="{% static 'moving_train_FM_Akintoye.jpg' %}" alt="preamble"
+      style="width:400px; height:auto; margin-left: 150px; margin-top: -40px;">
+
+    <div class="div2" style="margin-left: -220px;">
+      <h4 style="color: brown; font-style:italic;">Profile:</h4>
+
+      <ul>
+        <li>
+          <h5 style="color: white;">Nigeria’s Number 3 by FIDE </h5>
+        </li>
+        <li>
+          <h5 style="color: white;">Winner of the Challenger A category at the Gibraltar Chess Festival 2019</h5>
+        </li>
+        <li>
+          <h5 style="color: white;">Winner of the CPAN C4 Chevron Chess Challenge 2018</h5>
+        </li>
+        <li>
+          <h5 style="color: white;">Winner of National Friends Of Chess 2018</h5>
+        </li>
+        <li>
+          <h5 style="color: white;">Certified Lawyer</h5>
+        </li>
+        <li>
+          <h5 style="color: white;">2283 peak rating</h5>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <pre style="margin-left: -220px;">
+        <h4 style="color: brown; font-style:italic;">Master<span style="color: white;"> Oluwadurotimi Lapite</span></h4>
+      </pre>
+    <img src="{% static 'moving_train_Oluwadurotimi.webp' %}" alt="preamble"
+      style="width:400px; height:auto; margin-left: 150px; margin-top: -40px;">
+
+    <div class="div2" style="margin-left: -220px;">
+      <h4 style="color: brown; font-style:italic;">Profile:</h4>
+
+
+      <ul>
+        <li>
+          <h5 style="color: rgb(236, 195, 195);">Nigeria’s Number 20 by FIDE</h5>
+        </li>
+        <li>
+          <h5 style="color: whitesmoke;">Winner of Millionaires Chess Tournament</h5>
+        </li>
+        <li>
+          <h5 style="color: whitesmoke;">Winner of Awesome Classical Tournament 2022</h5>
+        </li>
+        <li>
+          <h5 style="color: whitesmoke;">Winner of the President’s Cup, Ghana 2019</h5>
+        </li>
+        <li>
+          <h5 style="color: whitesmoke;">Winner of several editions of Chess Heights Monthly Rapid</h5>
+        </li>
+        <li>
+          <h5 style="color: whitesmoke;">2238 peak rating
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+  <div class="becomestudent" id="becomestudent">
+    <pre>
+    <h3 style="color: brown;">Become <span style="color: white;">a Student</span></h3>
+    <div class="div1" style="display: flex;">
+      <hr class="vertical-line" style="height: 40px;"><h5 style="margin-top: -60px; margin-left:-60px">
+      Regardless of your age, we have something prepared for your seamless understanding of chess!</h5>
+    </div>
+    </pre>
+    <img src="{% static 'Chibikem.png' %}" alt="preamble"
+      style="width:300px; height:auto; margin-left: 300px; margin-top: -40px;">
+    <p style="margin-left:250px; font-style:italic; color:yellowgreen">Our student, Nwankwo Victor/Nigeria’s U-10 chess
+      champion</p>
+
+    <pre>
+      <div class="div1" style="display: flex;">
+        <hr class="vertical-line" style="height: 60px; margin-top:-10px"><h5 style="margin-top: -30px; margin-left:-60px">
+      Students will be taught in live classes and assignments will be given at the end of the class
+      to be discussed in the subsequent classes</h5>
+    </pre>
+    <img src="{% static 'moving_train_chessboard.png' %}" alt="preamble"
+      style="width:300px; height:auto; margin-left: 360px; margin-top: -40px;">
+    <h4>How To Become <span style="color:brown">A Student:</span></h4>
+    <ul>
+      <li>
+        <h5 style="color:wheat;">Book an appointment with us for an honest assessment</h5>
+      </li>
+      <li>
+        <h5 style="color:wheat;">Make payment and receive a study plan made specifically for your child</h5>
+      </li>
+      <li>
+        <h5 style="color:wheat;">An appropriate instructor will be assigned and classes will begin</h5>
+      </li>
+    </ul>
+  </div>
+  <div class="reviews" id="reviews">
+    <h3 style="margin-left: -140px; color:black">Reviews</h3>
+    <a href="https://www.instagram.com/movingtrainchess/?hl=en" style="font-style: italic; margin-left:150px">
+      <h3 onmouseover="this.style.color='brown'" onmouseout="this.style.color='white'">Click here to see our students
+        winning!!</h3>
+    </a>
+
+    <pre>
+     <h6> <p style="background-color:rgb(155, 136, 117);" class="p-5"> “During the lockdown, I saw a flyer about online
+  classes to mastering chess with FIDE Master Abdulrahman A. Akintoye.
+  The classes were powerful and eye-opening. With every session,
+  I learnt something new. On some days we studied openings, middlegames,
+  and popular endgames. On other days we analyzed my games with some strong players
+  and solved some masters puzzles on tactics. Chess got easier and more interesting
+  for me simply because I was already playing like a master in less than a month. 
+  It was no surprise when I participated in my first ever masters category chess 
+  tournament and did well.”
+  <span style="color: white;">
+  Madamori Oloruntobi (1892 FIDE Rating)</span>
+      </p></h6>
+      </pre>
+
+
+    <pre>
+      <h6><p style="background-color:rgb(155, 136, 117);" class="p-5"> “I used to think that maybe chess wasn't for me because I could never really understand
+  what was happening in the game, even after understanding how the pieces moved. 
+  Training with coach AbdulRahman these past few months have changed my view drastically
+  and made me feel like, soon enough, I'll be going to competitions. My rating, which was
+  roughly 1000 is now 1800+. I believe his explanations and the way he made me start looking
+  at chess has helped me greatly”
+      <span style="color: white;">
+  Fadhlullah AbdulRaheem </span>
+      </p></h6>
+    </pre>
+
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

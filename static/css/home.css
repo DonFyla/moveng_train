@@ -1,0 +1,269 @@
+/* Reset some default styles */
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, ul, li, pre {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Use a sans-serif font stack as the default font */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f5f5f5, #e0d4ba);
+    color: #543b0e; /* Default text color */
+  }
+  
+  /* Common styles for sections */
+  .section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Background image for .backgroundd */
+  .backgroundd {
+    background-image: url("static/download3.jpg");
+    background-size: cover;
+    background-position: center 60%;
+    height: 27VH;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background color */
+    color: whitesmoke;
+  }
+  
+  /* Style links and headings within .backgroundd */
+  .backgroundd a, .backgroundd h1 {
+    color: whitesmoke;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background: linear-gradient(to right, #f5f5f5, #e0d4ba);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Style the navigation links */
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    color: #543b0e; /* Link color */
+    text-transform: uppercase;
+  }
+  
+  .nav-link:hover {
+    color: brown; /* Link color on hover */
+  }
+  
+  /* Heading styles */
+  .headingg{
+    text-align: center;
+    margin-top: -3%;
+    font-style: italic;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .h1{
+    color: white;
+  }
+  
+  /* Preamble styles */
+  .preamble {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-image: url("static/download3.jpg");
+    background-position: center 101%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 80vh;
+    padding: 50px;
+    margin-top: 20px;
+  }
+  .pre{
+    /* overflow: hidden; */
+  }
+  .preimg1{
+    /* margin-left: 30%; */
+    margin-top: 2%;
+    height: 60%;
+    width: 60%;
+  }
+  .aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+  .aboutus img{
+    /* margin-bottom: 5%; */
+  }
+  .abtbody{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1%;
+  }
+   .vertical-line {
+    height: 85%;
+    border-left: 2px solid black;
+    margin-right: 2%;
+    /* margin-top: -2%; */
+    /* margin-left: 0;
+    padding: 0; */
+  }
+  
+  /* Div1 h5 styles */
+  /* .div1 h5 {
+    margin-left: -40px;
+    margin-top: -50px;
+  } */
+  .abtcontent{
+    display: flex;
+
+  }
+  /* .aboutimg{ */
+    width:300px; 
+    height:auto;
+    /* margin-left: 300px;  */
+    /* margin-top: -40px; */
+  }
+  
+  /* Your existing CSS */
+/* ... (your existing styles) ... */
+
+/* Add styles for the Tutors section */
+.sec2{
+    height: auto;
+    /* background-color: aqua; */
+}
+.tutors {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(155, 136, 117);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 5%;
+}
+.tutors1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.tutors h2 {
+  color: brown;
+}
+
+.tutors hr {
+  margin-top: -1px;
+}
+
+.tutors h4 {
+  color: brown;
+  font-style: italic;
+}
+
+.tutor-image {
+  width: 400px;
+  height: auto;
+  /* margin-left: 150px; */
+  /* margin-top: -40px; */
+}
+
+.tutors .div2 {
+  text-align: left;
+  margin-top: 20px;
+}
+.tutors img{
+  margin-top: 2%;
+}
+
+.tutors .div2 h4 {
+  color: brown;
+  font-style: italic;
+}
+
+.tutors ul {
+  list-style-type: square;
+  margin-left: 20px;
+  color: white; /* Customize the list item color */
+}
+
+.becomestudent{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(155, 136, 117);
+  text-align: center;
+}
+.stddiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ul{
+  text-align: left;
+}
+.ulhead{
+  text-align: left;
+  margin-bottom: .4%;
+}
+.reviews{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-image: url("static/download2.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  /*background: linear-gradient(to right, #f5f5f5, #e0d4ba);*/
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.revbody{
+  margin: 2%;
+  width: 60%;
+  /* padding: 2%; */
+}
+.revbody h6 {
+  margin: 1px;
+  padding: 3px;
+}
+  
+  /* Section titles */
+.section-title {
+  color: #543b0e;
+  font-size: 24px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  /* margin-left: 20px; */
+  /* margin-top: -40px; */
+  border-radius: 10px;
+}
+  
+ 
